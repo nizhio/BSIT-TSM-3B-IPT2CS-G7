@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="landingstyle.css">
+    <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
+</head>
+
+<body>
+
+    <audio autoplay loop preload="auto" src="Hero Select 1.mp3"></audio>
+
+    <script>
+        document.body.addEventListener("keydown", function(event) {
+            if (event.key === 'Escape') {
+            event.preventDefault();
+            location.href = 'Start page.html';
+        }
+    });
+    </script>
+
+
+
+
+    <div class="textwrapper">
+        <h1>Choose your Character</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="cardcontainer">
+            <div class="cardwrapper1">
+                <a href="AndreuxPage.html"><video src="card1.mp4" autoplay muted preload="auto" loop></video></a>   
+            </div>
+            <p id="description1">Specialized in dealing sustained damage from a distance</p>
+        </div>
+       
+        <div class="cardcontainer">
+            <div class="cardwrapper2">
+                <a href="#"><video src="" autoplay muted preload="auto" loop></video></a>   
+            </div>
+            <p id="description1">???</p>
+        </div>
+
+        <div class="cardcontainer">
+            <div class="cardwrapper3">
+                <a href="#"><video src="" autoplay muted preload="auto" loop></video></a>   
+            </div>
+            <p id="description1">???</p>
+        </div>
+ 
+    </div>
+        
+
+    
+        
+    
+</body>
+
+
+
+</html>
