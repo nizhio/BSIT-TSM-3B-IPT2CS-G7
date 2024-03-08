@@ -1,0 +1,722 @@
+*{
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-image: url("https://i.pinimg.com/originals/bd/02/ee/bd02eed9bdbed2e552fe36208c633f0c.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper{
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 450vh;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+    flex-wrap: wrap;
+    
+ }
+ nav a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding: 10 15px;
+    font-size: 25px;
+    user-select: none;
+ }
+
+ nav a::after{
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 3px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+ }
+
+ nav a:hover::after{
+    transform: scaleX(1);
+ }
+
+.profilepic{
+    padding-top: 30px;
+    height: 60%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.profilepic video{
+    width: 100%;
+    height: 100%;
+}
+
+
+.nameholder h1 {
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    font-size: 100px;
+    font-family: 'CRAMPS', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    user-select: none;
+}
+
+.nicknameholder h3{
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: flex;
+    font-family: 'CRAMPS', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    user-select: none;
+
+}
+
+#PROFILE{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 7%;
+    border: 1px solid #fff;
+    width: 90%;
+    height: 90vh;
+   
+}
+
+#PROFILE .herotext{
+    margin-top: 3%;
+    height: 5%;
+    width: 100%;
+}
+
+#PROFILE .herotext > h1{
+    height: 5%;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+#PROFILE .profilecon{
+    overflow: hidden;
+   position: absolute;
+   margin-top: 8%;
+   margin-right: 50%;
+     margin-left: 5%;
+    height: 70%;
+    width: 40%;
+    border: 1px solid #fff;
+}
+
+#PROFILE .profilecon h1{
+    color: #fff;
+    padding-top: 3px;
+    padding-right: 10px;
+    font-size: 30px;
+    user-select: none;
+}
+
+#PROFILE .profilecon p{
+    color: #fff;
+    padding-top: 3px;
+    font-family: 'Noto Serif Gurmukhi', sans-serif;
+    font-size: 25px;
+    user-select: none;
+}
+
+#PROFILE .profilecon .namecon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 5%;
+    width: 75%;
+    height: 5%;
+} 
+
+#PROFILE .profilecon .birthcon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 15%;
+    width: 75%;
+    height: 5%;
+} 
+
+#PROFILE .profilecon .agecon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 25%;
+    width: 75%;
+    height: 5%;
+} 
+
+#PROFILE .profilecon .sexcon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 35%;
+    width: 75%;
+    height: 5%;
+} 
+
+#PROFILE .profilecon .borncon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 45%;
+    width: 75%;
+    height: 5%;
+}
+
+#PROFILE .profilecon .homecon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 55%;
+    width: 75%;
+    height: 5%;
+}
+
+#PROFILE .profilecon .occupationcon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 65%;
+    width: 75%;
+    height: 5%;
+} 
+
+#PROFILE .profilecon .heightcon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 75%;
+    width: 75%;
+    height: 5%;
+}
+
+#PROFILE .profilecon .weightcon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 85%;
+    width: 75%;
+    height: 5%;
+}
+
+
+
+#PROFILE .profilecon2{
+    overflow: hidden;
+    position: absolute;
+    margin-top: 8%;
+    margin-right: 5%;
+      margin-left: 50%;
+     height: 70%;
+     width: 40%;
+     border: 1px solid #fff;
+ }
+
+
+ #PROFILE .profilecon2 h1{
+    color: #fff;
+    padding-top: 3px;
+    padding-right: 10px;
+    font-size: 30px;
+    user-select: none;
+}
+
+#PROFILE .profilecon2 p{
+    color: #fff;
+    position: relative;
+    padding-top: 3px;
+    font-family: 'Noto Serif Gurmukhi', sans-serif;
+    font-size: 25px;
+    user-select: none;
+}
+
+#PROFILE .profilecon2 .rolecon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 5%;
+    width: 75%;
+    height: 5%;
+}
+
+#PROFILE .profilecon2 .typecon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 15%;
+    width: 75%;
+    height: 5%;
+}  
+
+#PROFILE .profilecon2 .damagetypecon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 25%;
+    width: 75%;
+    height: 5%;
+}
+
+#PROFILE .profilecon2 .traitscon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 35%;
+    width: 90%;
+    height: 5%;
+}  
+
+#PROFILE .profilecon2 .likescon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 45%;
+    width: 95%;
+    height: 5%;
+}
+
+#PROFILE .profilecon2 .strengthcon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 55%;
+    width: 95%;
+    height: 5%;
+}
+
+#PROFILE .profilecon2 .weaknesscon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 65%;
+    width: 95%;
+    height: 5%;
+}
+
+#PROFILE .profilecon2 .hobbycon{
+    margin-left: 2%;
+    display: flex;
+    position: absolute;
+    margin-top: 75%;
+    width: 95%;
+    height: 5%;
+}
+
+
+#SKILLS{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 7%;
+    border: 1px solid #fff;
+    width: 90%;
+    height: 95vh;
+   
+}
+
+#SKILLS .skilltext{
+    margin-top: 3%;
+    height: 5%;
+    width: 100%;
+}
+
+#SKILLS .skilltext > h1{
+    position: absolute;
+    height: 5%;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    width: 90%;
+    user-select: none;
+}
+
+#SKILLS .skillholder{
+    overflow: hidden;
+   position: absolute;
+   margin-top: 7%;
+   margin-right: 5%;
+     margin-left: 5%;
+    height: 75%;
+    width: 80%;
+    border: 1px solid #fff;
+}
+
+/*Skill 1*/
+#SKILLS .skillimagecon1{
+    overflow: hidden;
+   position: absolute;
+   margin-top: 5%;
+   margin-right: 5%;
+     margin-left: 5%;
+    height: 18%;
+    width: 10%;
+    border-radius: 50%;
+}
+
+#SKILLS .skillimagecon1 img{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+#SKILLS .skillcon1{
+    margin-left: 18%;
+    display: flex;
+    position: absolute;
+    margin-top: 7%;
+    width: 80%;
+    height: 10%;
+}
+
+#SKILLS .skillcon1 h1{
+    color: #fff;
+    padding-top: 3px;
+    padding-right: 10px;
+    font-size: 23px;
+    user-select: none;
+}
+
+#SKILLS .skillcon1 p{
+    color: #fff;
+    padding-top: 3px;
+    font-family: 'Noto Serif Gurmukhi', sans-serif;
+    font-size: 20px;
+    user-select: none;
+}
+
+/*Skill 2*/
+#SKILLS .skillimagecon2{
+    overflow: hidden;
+   position: absolute;
+   margin-top: 20%;
+   margin-right: 5%;
+     margin-left: 5%;
+    height: 18%;
+    width: 10%;
+    border-radius: 50%;
+}
+
+#SKILLS .skillimagecon2 img{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#SKILLS .skillcon2{
+    margin-left: 18%;
+    display: flex;
+    position: absolute;
+    margin-top: 22%;
+    width: 80%;
+    height: 12%;
+}
+
+#SKILLS .skillcon2 h1{
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 23px;
+    user-select: none;
+}
+
+#SKILLS .skillcon2 p{
+    color: #fff;
+    padding-top: 10px;
+    font-family: 'Noto Serif Gurmukhi', sans-serif;
+    font-size: 20px;
+    user-select: none;
+}
+
+/*Skill 3*/
+#SKILLS .skillimagecon3{
+    overflow: hidden;
+   position: absolute;
+   margin-top: 35%;
+   margin-right: 5%;
+     margin-left: 5%;
+    height: 18%;
+    width: 10%;
+    border-radius: 50%;
+}
+
+#SKILLS .skillimagecon3 img{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#SKILLS .skillcon3{
+    margin-left: 18%;
+    display: flex;
+    position: absolute;
+    margin-top: 36%;
+    width: 80%;
+    height: 12%;
+}
+
+#SKILLS .skillcon3 h1{
+    color: #fff;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 23px;
+    user-select: none;
+}
+
+#SKILLS .skillcon3 p{
+    color: #fff;
+    padding-top: 10px;
+    font-family: 'Noto Serif Gurmukhi', sans-serif;
+    font-size: 20px;
+    user-select: none;
+}
+
+
+
+
+
+
+#SKINS{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 7%;
+    border: 1px solid #fff;
+    width: 90%;
+    height: 95vh;
+   
+}
+
+#SKINS .skintext{
+    margin-top: 3%;
+    height: 5%;
+    width: 100%;
+}
+
+#SKINS .skintext > h1{
+    position: absolute;
+    height: 5%;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    width: 90%;
+    user-select: none;
+}   
+
+
+
+#SKINS .skin1{
+    position: absolute;
+    margin-top: 15%;
+    left: 10%;
+    width: 23vw;
+    height: 33vh;
+}
+
+#SKINS .skin1 video{
+    user-select: none;
+    transition: all .5s;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+}
+
+#SKINS .skinholder1 p{
+    display: none;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    margin-top: 35%;
+    font-size: 20px;
+    left: 11%;
+    width: 20vw;
+    height: 3rem;
+    user-select: none;
+}
+
+#SKINS .skinholder1:hover p{
+    display: flex;
+}
+
+#SKINS .skinholder1:hover video{
+    transform: scale(1.2);
+    
+}
+
+#SKINS .skin2{
+    position: absolute;
+    margin-top: 15%;
+    right  : 10%;
+    width: 23vw;
+    height: 33vh;
+}
+
+#SKINS .skin2 video{
+    user-select: none;
+    cursor: pointer;
+    transition: all .5s;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#SKINS .skinholder2 p{
+    display: none;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    margin-top: 35%;
+    font-size: 20px;
+    right: 11%;
+    width: 20vw;
+    height: 3rem;
+    user-select: none;
+}
+
+#SKINS .skinholder2:hover p{
+    display: flex;
+}
+
+#SKINS .skinholder2:hover video{
+    transform: scale(1.2);
+    
+}
+
+#SKINS .skin3{
+    position: absolute;
+    margin-top: 15%;
+    left: 38%;
+    width: 23vw;
+    height: 33vh;
+}
+
+#SKINS .skin3 video{
+    user-select: none;
+    cursor: pointer;
+    transition: all .5s;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+#SKINS .skinholder3 p{
+    display: none;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    margin-top: 35%;
+    font-size: 20px;
+    right: 40%;
+    width: 20vw;
+    height: 3rem;
+    user-select: none;
+}
+
+#SKINS .skinholder3:hover p{
+    display: flex;
+}
+
+#SKINS .skinholder3:hover video{
+    transform: scale(1.2);
+    
+}
+
+footer{
+    background-color: #111;
+    color: white;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    text-align: center;
+ 
+  }
+
+
+.sociallinks{
+    display: flex;
+    user-select: none;
+    box-sizing: border-box;
+    padding: 18px 0;
+
+
+}
+
+.sociallinks ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  ul li {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    color: #fff;
+    background: rgba(128,128,128,.2);
+    border-radius: 12px;
+    width: 32px;
+    height: 32px;
+  }
+
+  li img{
+    border-radius: 30%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .copyright{
+    position: absolute;
+    margin-top: 7%;
+    font-size: 20px;
+  }
