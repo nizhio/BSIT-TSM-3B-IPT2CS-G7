@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    margin: 0;
+    height: 100%;
+}
+@font-face {
+    font-family: Romulus;
+    src: url(font_Pix3M_ccby/_bitmap_font____romulus_by_pix3m-d6aokem.ttf);
+}
+
+/* nav */
+.nav-bar, .top-nav {
+    background-color: rgb(32, 48, 31);
+    box-shadow: 0px 15px 30px 10px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 1rem;
+    overflow: hidden;
+    top: 0;
+    z-index: 100;
+    height: 6rem;
+}
+.logo {
+    font-family: Romulus;
+    font-size: 50px;
+    color: white;
+}
+@supports (position: sticky) {
+    .top-nav {
+      position: sticky;
+    }
+}
+
+/* headers */
+.tophead {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0px;
+    align-content: center;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+}
+
+.desc {
+    font-family: Romulus;
+    color: white;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    align-self: center;
+    text-align: center;
+    padding: 1rem;
+    z-index: 10;
+    padding-top: 85px;
+}
+.desc h1 {
+    font-size: 75px;
+}
+.desc p {
+    font-size: 55px;
+}
+
+/* content */
+.image {
+    background-image: url(Background1.gif);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+div.image:before {
+    content: "GROUP7";
+    position: absolute; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    font-family: Romulus;
+    font-size: 105px;
+    color: white;
+    opacity: 50%;
+}
+
+/* descriptions */
+.bodybox {
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+div.aboutme {
+    float: left;
+    color: white;
+    margin: 10px;
+}
+.aboutme h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-family: Romulus;
+    font-size: 70px;
+}
+.aboutme p {
+    text-align: center;
+    font-family: Romulus;
+    font-size: 40px;
+}
+
+/* hobbies */
+.Hobbies, .Mangaread, .Playgames {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 0.5rem;
+    grid-auto-rows: 300px;
+}
+.lines {
+    font-family: Romulus;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-color: rgb(32, 48, 31);
+    box-shadow: 0px 15px 30px 10px black;
+}
+.hobby {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+  
+.hobbyimg {
+    border-radius: 50px;
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+.hobbyimg:hover {
+    transform: scale(1.5);
+}
+  
+/* About Styles */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 6rem auto 0 auto;
+}
+.about-text {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+  
+.about-text h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.about-image img {
+    height: 100%;
+    object-fit: cover;
+}
+.about-social {
+    display: flex;
+    justify-content: start;
+}
+.about-social a {
+    color: black;
+    padding: 0 1rem 1rem 1rem;
+}
+.section-stop {
+    scroll-margin-top: 7rem;
+}
